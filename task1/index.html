@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section class="py-5">
+      <div class="container">
+        <h1 class="mb-4">Product</h1>
+        <div class="form-floating mb-5">
+          <input
+            type="text"
+            class="form-control"
+            id="productName"
+            placeholder="Product Name"
+          />
+          <label for="productName">Product Name</label>
+        </div>
+        <div class="form-floating mb-5">
+          <input
+            type="number"
+            class="form-control"
+            id="productPrice"
+            placeholder="ProductPrice "
+          />
+          <label for="productPrice">Product Price</label>
+        </div>
+        <div class="form-floating mb-5">
+          <input
+            type="text"
+            class="form-control"
+            id="productCategory"
+            placeholder="ProductCategory "
+          />
+          <label for="productCategory">Product Category</label>
+        </div>
+        <div class="form-floating mb-5">
+          <input
+            type="text"
+            class="form-control"
+            id="productDespription"
+            placeholder="Product Despription"
+          />
+          <label for="productDespription">Product Despription</label>
+        </div>
+        <div class="form-floating mb-5">
+          <input
+            type="number"
+            class="form-control w-25"
+            id="productCount"
+            placeholder="Product Count"
+          />
+          <label for="productCount">Product Count</label>
+        </div>
+        <div class="form-floating mb-5">
+          <input
+            type="file"
+            class="form-control w-25"
+            id="productImage"
+            accept=".png , .jpg"
+            placeholder="Product Image"
+          />
+          <label for="productImage">Product Image</label>
+        </div>
+        <button class="btn btn-info" id="addupdate" onclick="add()">Add Product</button>
+        <button class="btn btn-danger" onclick="deleteAll()">Delete All</button>
+        <table class="mt-5 table table-bordered text-center">
+            <thead>
+            <th class="bg-dark text-white">ID</th>
+            <th class="bg-dark text-white">Product Image</th>
+
+            <th class="bg-dark text-white">Product Count</th>
+
+            <th class="bg-dark text-white">Product Name</th>
+            <th class="bg-dark text-white">Product Price</th>
+             <th class="bg-dark text-white">Total Price</th>
+            <th class="bg-dark text-white">Product Category</th>
+            <th class="bg-dark text-white">Product Description</th>
+            <th class="bg-dark text-white">Delete</th>
+            <th class="bg-dark text-white">Update</th>
+          </thead>
+          <tbody id="tBody">
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="js/main.js" ></script>
+
+  </body>
+</html>
